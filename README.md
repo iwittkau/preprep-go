@@ -107,9 +107,16 @@ go build -tags feature -o xmpl-feat ./build
 rm -r build
 ``` 
 
+# Best Practice
+
+- use a "build" folder, add all files and build the whole folder
+
+
 # Ceavats
 
-`example/` will not compile unless all tags are provided during build.
+- all features need a build tag
+- without preprocessing only a binary with all features can be built
+	- `example/` will not compile unless all tags are provided during build
 
 
 # Inspiration
